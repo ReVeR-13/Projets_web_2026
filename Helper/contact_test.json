@@ -1,0 +1,17 @@
+{
+    "1":{
+        "nom":"Adam",
+        "prenom":"Solfer",
+        "statut":"operation"
+    },
+    "2":{
+        "nom":"Ross",
+        "prenom":"Banerai",
+        "statut":"Soldat"
+    },
+    "3":{
+        "nom":"Tenor",
+        "prenom":"William",
+        "statut":"Sergent"
+    }
+}

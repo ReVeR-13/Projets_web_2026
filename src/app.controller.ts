@@ -1,15 +1,16 @@
 import { Controller, Get, Post } from '@nestjs/common';
-import { AppService } from './app.service';
-import { Sign, sign } from 'crypto';
+import { AppService} from './app.service';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import {AppControllerHelloWorld} from './app.swagger'
 
+@ApiTags('Route de base')
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) { }
+  constructor(private readonly appService: AppService) {}
 
+  @ApiOperation(AppControllerHelloWorld)
   @Get()
   getStart(): string {
     return this.appService.getStart();
   }
-
 }
-

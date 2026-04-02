@@ -1,7 +1,7 @@
-import { ApiCodeResponse } from "@common/api";
+import { ApiCodeResponse } from '@common/api';
 
-export interface ApiResponse{
-    code:ApiCodeResponse;
-    result: boolean;
-    data: any;
+export interface ApiResponse {
+  code: ApiCodeResponse;
+  result: boolean;
+  data: any;
 }

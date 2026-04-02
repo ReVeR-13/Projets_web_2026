@@ -1,17 +1,12 @@
-import { Controller, Get } from '@nestjs/common';
-import { AccountService } from './account.service'
-import { th } from 'date-fns/locale/th';
+import { Controller, Get, Param } from '@nestjs/common';
+import { AccountService } from '@api/index';
 
 @Controller('account')
 export class AccountController {
+  constructor(private readonly AccountService: AccountService) {}
 
-    constructor(private readonly AccountService: AccountService){}
-
-    @Get('sign-in')
-    public Signin() :string {
-        return this.AccountService.GetSignIn();
-    }
-
+  @Get('sign-in/:nom')
+  public Signin(@Param('nom') nom:string): string {
+    return this.AccountService.GetSignIn(nom);
+  }
 }
-
-

@@ -1,3 +1,3 @@
-export enum ApiCodeResponse{
-    Test= 'Test-1'
+export enum ApiCodeResponse {
+  Test = 'Ceci est une erreur',
 }

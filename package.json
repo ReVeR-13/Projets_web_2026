@@ -17,7 +17,14 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+
+    "module": "ts-node ./Helper/help_make-module.ts",
+    "controller": "ts-node ./Helper/help_make-controller.ts",
+    "service": "ts-node ./Helper/help_make-service.ts",
+    "dir": "ts-node ./Helper/help_make-files_and_directory.ts",
+    "mk": "ts-node ./Helper/help_dossier_createur.ts",
+    "upd-idx":"ts-node ./Helper/help_maj_index.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
