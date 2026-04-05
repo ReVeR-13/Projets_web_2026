@@ -17,7 +17,14 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "module": "ts-node ./Helper/help_make-module.ts",
+    "controller": "ts-node ./Helper/help_make-controller.ts",
+    "service": "ts-node ./Helper/help_make-service.ts",
+    "full": "ts-node ./Helper/help_make-full.ts",
+    "dir": "ts-node ./Helper/help_make-files_and_directory.ts",
+    "mk": "ts-node ./Helper/help_dossier_createur.ts",
+    "upd-idx": "ts-node ./Helper/help_maj_index.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
@@ -30,6 +37,8 @@
     "@types/date-fns": "^2.5.3",
     "@types/lodash": "^4.17.24",
     "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.4",
     "date-fns": "^4.1.0",
     "dotenv": "^17.3.1",
     "lodash": "^4.17.23",

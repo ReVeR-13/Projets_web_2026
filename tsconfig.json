@@ -16,7 +16,10 @@
     "baseUrl": "./src",
     "paths": {
       "@common/*": ["./api/common/*"],
-      "@api/*": ["./api/*"]
+      "@api/*": ["./api"],
+      "@controller/*":["./api/controllers/*"],
+      "@module/*":["./api/modules/*"],
+      "@service/*":["./api/services/*"]
     },
     "incremental": true,
     "skipLibCheck": true,
@@ -24,6 +27,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true
   }
 }
